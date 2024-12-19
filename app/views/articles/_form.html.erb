@@ -12,12 +12,13 @@
   <% end %>
 
   <div class="text">
-    <%= form.label :"ชื่อเรื่อง", style: "display: block" %>
+    ชื่อเรื่อง<br>
+    <% form.label :title, style: "display: block" %>
     <%= form.text_field :title, placeholder: "ชื่อเรื่อง" %>
   </div>
 
   <div class="text">
-    <%= form.label :"เนื้อหา (ไม่เกืน 100 ตัวอักษร)", style: "display: block" %>
+    <%= form.label :body,"เนื้อหา (ไม่เกืน 100 ตัวอักษร)", style: "display: block" %>
     <%= form.textarea :body , placeholder: "เนื้อหา"%>
   </div>
 
