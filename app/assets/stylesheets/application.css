@@ -8,3 +8,21 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ strong {
+   font-weight: bold;
+   color: rgb(230, 154, 33);
+ }
+ .text {
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.button {
+    padding: 7px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
