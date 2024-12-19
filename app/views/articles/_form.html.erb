@@ -21,6 +21,12 @@
     <%= form.textarea :body , placeholder: "เนื้อหา"%>
   </div>
 
+  <div class="text">
+    <%= form.label :"ผู้เขียน", style: "display: block" %>
+    <%= form.text_field :author, placeholder: "ผู้เขียน" %>
+  </div>
+
+
   <div>
    <%= form.submit(article.new_record? ? "สร้างบทความ" : "อัพเดทบทความ", class: "button") %>
   </div>
