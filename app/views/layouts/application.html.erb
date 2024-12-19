@@ -23,6 +23,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav style="background-color: #f0f0f0; padding: 1em; margin-bottom: 1em; flex-direction: row; display: flex; justify-content: space-between;">
+      <%= link_to "Home", root_path %>
+      <%= button_to "Log out", session_path, method: :delete if authenticated? %>
+    </nav>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
